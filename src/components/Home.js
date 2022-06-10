@@ -1,7 +1,16 @@
 import React from 'react'
-
+import NavBar from './NavBar'
 export default function Home() {
+
   return (
-    <div>Home Page</div>
+    <div className='homepage'>
+        <h1> Welcome to Golf course finder </h1>
+        <h3> Please select an option</h3>
+        <NavBar/>
+
+    </div>
   )
 }
+
+
+//https://golf-course-database.com/api-v1-0/

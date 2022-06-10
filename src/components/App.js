@@ -8,7 +8,7 @@ import ThirdPage from './ThirdPage'
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      {/* <NavBar/> */}
       <Switch>
         <Route exact path='/'>
           <Home />
