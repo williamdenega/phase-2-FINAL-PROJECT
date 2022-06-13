@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useRouteMatch  } from 'react-router-dom'
 
 const linkStyles = {
     display: "inline-block",
@@ -9,40 +9,62 @@ const linkStyles = {
     background: "blue",
     textDecoration: "none",
     color: "white",
-  };
+
+};
+
+const navStyle = {
+    background: 'bisque',
+    padding: '15px',
+    variant: "dark"
+}
 
 
- function NavBar() {
+function NavBar() {
+
+    let match = useRouteMatch("/")
   return (
     
-    <div className="navbar">
-        <NavLink
-        to='/'
-        exact
-        style={linkStyles}
-        activeStyle={{
+    <div className="navbar" style={navStyle}>
+        {match.isExact ? null :
+        <NavLink  
+            to='/'
+            exact
+            style={linkStyles}
+            activeStyle={{
             background: "darkblue",
         }}
         >Home
         </NavLink>
+        }
+ 
         <NavLink
-            to= '/page2'
+            to= '/dogs'
             exact
             style={linkStyles}
             activeStyle={{
                 background:'darkblue'
             }}
-        >PAGE 2
+        >DOGS
         </NavLink>
         <NavLink 
-            to='/page3'
+            to='/cats'
             exact
             style={linkStyles}
             activeStyle={{
                 background: 'darkblue'
             }}
-        >PAGE 3
+        >CATS
         </NavLink>
+        <NavLink
+            to='/favorites'
+            exact
+            style={linkStyles}
+            activeStyle= {{
+                background: 'darkblue'
+            }}>
+            FAVORITES
+        </NavLink>
+
     </div>
   )
 }

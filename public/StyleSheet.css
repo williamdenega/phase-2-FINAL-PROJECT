@@ -1,5 +1,17 @@
+
+body {
+    background-color: bisque;
+}
+
+
+
 .homepage {
     text-align: center;
-    padding: 100px;
-    background-color: aqua;
+    background-color: bisque;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
+
+

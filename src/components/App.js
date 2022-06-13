@@ -1,9 +1,9 @@
 import React from 'react';
 import {Route , Switch} from 'react-router-dom'
-import NavBar from './NavBar';
 import Home from './Home'
 import SecondPage from './SecondPage';
 import ThirdPage from './ThirdPage'
+import Favorites from './Favorites';
 
 function App() {
   return (
@@ -13,11 +13,14 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route exact path='/page2'>
+        <Route exact path='/dogs'>
           <SecondPage/>
         </Route>
-        <Route exact path='/page3'>
+        <Route exact path='/cats'>
           <ThirdPage/>
+        </Route>
+        <Route exact path='/favorites'>
+          <Favorites/>
         </Route>
       </Switch>
     </div>
