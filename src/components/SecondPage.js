@@ -4,22 +4,45 @@ import Pet from './pet'
 
 export default function SecondPage() {
 
-  const [pet, setPet] = useState('')
+
+  const [pets, setPets] = useState(null)
+  const handleLike = (pet,e,id)=>{
+    fetch('http://localhost:3000/likes',{
+      method:'POST',
+      headers:{
+        'Content-Type': 'application/json',
+        Accept: "application/json"
+      },
+      body: JSON.stringify({pet})
+    })
+    e.target.disabled = true
+    e.target.innerText = 'Added to Favorites'
+    
+
+  }
+
+
 
   useEffect(()=>{
-      fetch('https://dog.ceo/api/breeds/image/random')
-      .then(resp => resp.json())
-      .then((r)=> setPet(r))
+      fetch('https://dog.ceo/api/breeds/image/random/21')
+      .then((resp) => resp.json())
+      .then((r)=> setPets(r.message))
+
     }
   ,[])
 
   return (
     <div>
         <div>
-            <NavBar/>
+            <NavBar/> 
+            
         </div>
         <h1>SecondPage</h1>
-        <Pet pet= {pet} />
+       {pets ? <div className='card-container'>
+          {pets.map((pet,count)=><Pet key={count} pet= {pet} handleClick={handleLike}/> )}
+          
+        </div> : <h2>Loading</h2>}
+        {/* {pets.map((pet,count)=>console.log(pet) )} */}
     </div>
   )
 }

@@ -3,6 +3,14 @@ body {
     background-color: bisque;
 }
 
+.card-container {
+    display:flex;
+    align-items:space-between;
+    padding: 50px;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
 
 
 .homepage {
@@ -15,3 +23,43 @@ body {
 }
 
 
+img {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    max-height: 250px;
+    /* vertical-align: middle; */
+    /* align-items: center; */
+  }
+
+
+.pet-card {
+    /* 
+    padding:25px;
+    margin-bottom:50px;
+    width:22.5%;
+    /* width:45%; */
+    /* align-items: center; */
+    /* display: flex;
+    justify-content: center */
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    background:white;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e09a4b;
+}
+
+/* .card {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52;
+  } */

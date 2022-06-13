@@ -1,16 +1,60 @@
 {
-    "favorites": [
-      {
-        "id": 1,
-        "name": "Woody",
-        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
-      },
-      {
-        "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
-      }
-    ]
-  }
+  "likes": [
+    {
+      "pet": "https://images.dog.ceo/breeds/spaniel-sussex/n02102480_6651.jpg",
+      "id": 1
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/dingo/n02115641_12981.jpg",
+      "id": 2
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/doberman/n02107142_16429.jpg",
+      "id": 3
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/briard/n02105251_2983.jpg",
+      "id": 4
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3268.jpg",
+      "id": 5
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/maltese/n02085936_3396.jpg",
+      "id": 6
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/b9s.jpg",
+      "id": 9
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/a40.jpg",
+      "id": 10
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/eib.jpg",
+      "id": 11
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/d3j.jpg",
+      "id": 12
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_2005.jpg",
+      "id": 13
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/beagle/n02088364_14911.jpg",
+      "id": 14
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/9q6.jpg",
+      "id": 15
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/9gg.jpg",
+      "id": 16
+    }
+  ]
+}

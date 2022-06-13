@@ -12,5 +12,3 @@ export default function Home() {
   )
 }
 
-
-//https://golf-course-database.com/api-v1-0/
