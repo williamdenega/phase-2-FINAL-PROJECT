@@ -22,6 +22,7 @@ const navStyle = {
 function NavBar() {
 
     let match = useRouteMatch("/")
+    // console.log(match)
   return (
     
     <div className="navbar" style={navStyle}>

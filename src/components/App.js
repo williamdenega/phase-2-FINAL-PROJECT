@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Route , Switch} from 'react-router-dom'
 import Home from './Home'
-import SecondPage from './SecondPage';
-import ThirdPage from './ThirdPage'
+import DogPage from './DogPage';
+import CatPage from './CatPage'
 import Favorites from './Favorites';
 
 function App() {
+
+  useEffect(()=>{
+    console.log('insdie app')
+  },[])
+
   return (
     <div className="App">
       {/* <NavBar/> */}
@@ -14,10 +19,10 @@ function App() {
           <Home />
         </Route>
         <Route exact path='/dogs'>
-          <SecondPage/>
+          <DogPage/>
         </Route>
         <Route exact path='/cats'>
-          <ThirdPage/>
+          <CatPage/>
         </Route>
         <Route exact path='/favorites'>
           <Favorites/>

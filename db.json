@@ -1,60 +1,34 @@
 {
   "likes": [
     {
-      "pet": "https://images.dog.ceo/breeds/spaniel-sussex/n02102480_6651.jpg",
+      "pet": "https://images.dog.ceo/breeds/hound-basset/n02088238_9960.jpg",
+      "type": "dog",
       "id": 1
     },
     {
-      "pet": "https://images.dog.ceo/breeds/dingo/n02115641_12981.jpg",
+      "pet": "https://images.dog.ceo/breeds/hound-afghan/n02088094_13011.jpg",
+      "type": "dog",
       "id": 2
     },
     {
-      "pet": "https://images.dog.ceo/breeds/doberman/n02107142_16429.jpg",
+      "pet": "https://images.dog.ceo/breeds/appenzeller/n02107908_2313.jpg",
+      "type": "dog",
       "id": 3
     },
     {
-      "pet": "https://images.dog.ceo/breeds/briard/n02105251_2983.jpg",
+      "pet": "https://images.dog.ceo/breeds/komondor/n02105505_3603.jpg",
+      "type": "dog",
       "id": 4
     },
     {
-      "pet": "https://images.dog.ceo/breeds/schnauzer-giant/n02097130_3268.jpg",
+      "pet": "https://cdn2.thecatapi.com/images/8c.gif",
+      "type": "cat",
       "id": 5
     },
     {
-      "pet": "https://images.dog.ceo/breeds/maltese/n02085936_3396.jpg",
+      "pet": "https://cdn2.thecatapi.com/images/4q4.gif",
+      "type": "cat",
       "id": 6
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/b9s.jpg",
-      "id": 9
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/a40.jpg",
-      "id": 10
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/eib.jpg",
-      "id": 11
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/d3j.jpg",
-      "id": 12
-    },
-    {
-      "pet": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_2005.jpg",
-      "id": 13
-    },
-    {
-      "pet": "https://images.dog.ceo/breeds/beagle/n02088364_14911.jpg",
-      "id": 14
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/9q6.jpg",
-      "id": 15
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/9gg.jpg",
-      "id": 16
     }
   ]
 }

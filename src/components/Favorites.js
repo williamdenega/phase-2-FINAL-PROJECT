@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
-import Pet from './pet'
+import Pet from './Pet'
 
 export default function Favorites() {
 
@@ -33,7 +33,19 @@ export default function Favorites() {
       <div>
         <NavBar/>
       </div>
+
       <h1>Favorites</h1>
+      
+
+      <div className="filterBox">
+         <h3>Filter By: </h3>
+        <select name='pet'>
+          <option value='all'>All</option>
+          <option value='dog'>Dogs</option>
+          <option value='cat'>Cats</option>
+        </select>
+      </div>
+
       <div className='card-container'>
         {favorites.map((pet)=> <Pet key={pet.id} pet= {pet.pet} id={pet.id}  handleClick={handleDelete}/> )}
       </div>

@@ -34,14 +34,7 @@ img {
 
 
 .pet-card {
-    /* 
-    padding:25px;
-    margin-bottom:50px;
-    width:22.5%;
-    /* width:45%; */
-    /* align-items: center; */
-    /* display: flex;
-    justify-content: center */
+    
     text-align: center;
     border: grey solid 1px;
     padding: 1rem;
@@ -51,15 +44,27 @@ img {
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e09a4b;
+    border-radius: 4px
 }
 
-/* .card {
-    text-align: center;
-    border: grey solid 1px;
-    padding: 1rem;
-    width: 15rem;
-    height: 25rem;
-    display: inline-grid;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52;
-  } */
+
+
+
+#loadButton{
+    color: rgb(0, 0, 0);
+    display: flex;
+    left: 50%;
+    transform: translate(450%);
+    font-size: 16px;
+    padding: 15px 32px;
+    box-shadow: 3px 4px #e09a4b;
+}
+
+.filterBox{
+    display: flex;
+    width: 200px;
+    padding: 20px;
+    position: relative;
+}
+
+
