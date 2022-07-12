@@ -29,6 +29,36 @@
       "pet": "https://cdn2.thecatapi.com/images/4q4.gif",
       "type": "cat",
       "id": 6
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/weimaraner/n02092339_235.jpg",
+      "type": "dog",
+      "id": 7
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/dingo/n02115641_8578.jpg",
+      "type": "dog",
+      "id": 8
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/dachshund/dachshund-1018409_640.jpg",
+      "type": "dog",
+      "id": 9
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/1BSBvMNfR.jpg",
+      "type": "cat",
+      "id": 10
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/2bLo18NMF.jpg",
+      "type": "cat",
+      "id": 11
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/STRKgfRVq.jpg",
+      "type": "cat",
+      "id": 12
     }
   ]
 }
