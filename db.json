@@ -26,11 +26,6 @@
       "id": 5
     },
     {
-      "pet": "https://cdn2.thecatapi.com/images/4q4.gif",
-      "type": "cat",
-      "id": 6
-    },
-    {
       "pet": "https://images.dog.ceo/breeds/weimaraner/n02092339_235.jpg",
       "type": "dog",
       "id": 7

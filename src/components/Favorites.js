@@ -5,12 +5,17 @@ import Pet from './Pet'
 export default function Favorites() {
 
   const [favorites, setFavorites] = useState([])
+  const [displayList, setDisplayList ] = useState([])
 
   useEffect(()=>{
     fetch('http://localhost:3000/likes')
     .then((resp)=> resp.json())
-    .then((pets)=> setFavorites(pets))
+    .then((pets)=>{ 
+      setFavorites(pets)
+      setDisplayList(pets)
+    })
   },[])
+
 
 
 
@@ -21,12 +26,18 @@ export default function Favorites() {
 
     const newList = favorites.filter((item)=> item.pet !== pet )
     setFavorites(newList)
+    setDisplayList(newList)
 
   }
 
-
-
-
+  const handleFilter = (value)=>{
+    if(value !== 'all'){
+      const FilteredList = favorites.filter((pet)=> pet.type === value)
+      setDisplayList(FilteredList)
+    }else{
+      setDisplayList(favorites)
+    }
+  }
 
   return (
     <div>
@@ -39,7 +50,7 @@ export default function Favorites() {
 
       <div className="filterBox">
          <h3>Filter By: </h3>
-        <select name='pet'>
+        <select onChange={e=> handleFilter(e.target.value)} name='pet'>
           <option value='all'>All</option>
           <option value='dog'>Dogs</option>
           <option value='cat'>Cats</option>
@@ -47,7 +58,7 @@ export default function Favorites() {
       </div>
 
       <div className='card-container'>
-        {favorites.map((pet)=> <Pet key={pet.id} pet= {pet.pet} id={pet.id}  handleClick={handleDelete}/> )}
+        {displayList.map((pet)=> <Pet key={pet.id} pet= {pet.pet} id={pet.id}  handleClick={handleDelete}/> )}
       </div>
     </div>
   )
