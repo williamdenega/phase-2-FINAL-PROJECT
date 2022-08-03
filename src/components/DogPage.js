@@ -52,7 +52,7 @@ export default function DogPage() {
        {pets ? 
        <div className='card-container'>
           {pets.map((pet,count)=><Pet key={count} pet= {pet} handleClick={handleLike}/> )}
-          <div>
+          <div id="button-div">
             <button id='loadButton' onClick={loadMore}>Load More Dogs</button>
           </div>
         </div> 

@@ -60,6 +60,12 @@ img {
     box-shadow: 3px 4px #e09a4b;
 }
 
+/* #button-div{
+    left: 50%;
+    position: relative;
+    top: 10%;
+    /* left: 50%; */
+
 .filterBox{
     display: flex;
     width: 200px;

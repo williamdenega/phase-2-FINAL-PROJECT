@@ -5,14 +5,15 @@ import Pet from './Pet'
 export default function Favorites() {
 
   const [favorites, setFavorites] = useState([])
-  const [displayList, setDisplayList ] = useState([])
+  // const [displayList, setDisplayList ] = useState([])
+  const [filter, setFilter] = useState("all")
 
   useEffect(()=>{
     fetch('http://localhost:3000/likes')
     .then((resp)=> resp.json())
     .then((pets)=>{ 
       setFavorites(pets)
-      setDisplayList(pets)
+      // setDisplayList(pets)
     })
   },[])
 
@@ -23,21 +24,38 @@ export default function Favorites() {
     fetch(`http://localhost:3000/likes/${id}`,{
       method: 'Delete'
     })
+    .then(resp => resp.json())
+    .then(() => {
+      const newList = favorites.filter((item)=> item.pet !== pet )
+      setFavorites(newList)
+    })
 
-    const newList = favorites.filter((item)=> item.pet !== pet )
-    setFavorites(newList)
-    setDisplayList(newList)
+    
+    // setDisplayList(newList)  
 
   }
 
   const handleFilter = (value)=>{
-    if(value !== 'all'){
-      const FilteredList = favorites.filter((pet)=> pet.type === value)
-      setDisplayList(FilteredList)
-    }else{
-      setDisplayList(favorites)
-    }
+    setFilter(value)
+    // if(value !== 'all'){
+    //   const FilteredList = favorites.filter((pet)=> pet.type === value)
+    //   setDisplayList(FilteredList)
+    // }else{
+    //   setDisplayList(favorites)
+    // }
   }
+
+  const filteredList = favorites.filter(favorite => {
+    if(filter === "all"){
+      return favorite
+    } else if(filter === "cat"){
+      return favorite.type === "cat"
+    } else{
+      return favorite.type === "dog"
+    }
+  })
+
+  console.log(filteredList)
 
   return (
     <div>
@@ -58,7 +76,7 @@ export default function Favorites() {
       </div>
 
       <div className='card-container'>
-        {displayList.map((pet)=> <Pet key={pet.id} pet= {pet.pet} id={pet.id}  handleClick={handleDelete}/> )}
+        {filteredList.map((pet)=> <Pet key={pet.id} pet= {pet.pet} id={pet.id}  handleClick={handleDelete}/> )}
       </div>
     </div>
   )

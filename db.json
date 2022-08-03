@@ -1,24 +1,9 @@
 {
   "likes": [
     {
-      "pet": "https://images.dog.ceo/breeds/hound-basset/n02088238_9960.jpg",
-      "type": "dog",
-      "id": 1
-    },
-    {
       "pet": "https://images.dog.ceo/breeds/hound-afghan/n02088094_13011.jpg",
       "type": "dog",
       "id": 2
-    },
-    {
-      "pet": "https://images.dog.ceo/breeds/appenzeller/n02107908_2313.jpg",
-      "type": "dog",
-      "id": 3
-    },
-    {
-      "pet": "https://images.dog.ceo/breeds/komondor/n02105505_3603.jpg",
-      "type": "dog",
-      "id": 4
     },
     {
       "pet": "https://cdn2.thecatapi.com/images/8c.gif",
@@ -36,24 +21,49 @@
       "id": 8
     },
     {
-      "pet": "https://images.dog.ceo/breeds/dachshund/dachshund-1018409_640.jpg",
-      "type": "dog",
-      "id": 9
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/1BSBvMNfR.jpg",
-      "type": "cat",
-      "id": 10
-    },
-    {
-      "pet": "https://cdn2.thecatapi.com/images/2bLo18NMF.jpg",
-      "type": "cat",
-      "id": 11
-    },
-    {
       "pet": "https://cdn2.thecatapi.com/images/STRKgfRVq.jpg",
       "type": "cat",
       "id": 12
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/springer-english/n02102040_3621.jpg",
+      "type": "dog",
+      "id": 13
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/poodle-medium/PXL_20210220_100624962.jpg",
+      "type": "dog",
+      "id": 14
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/puggle/IMG_122350.jpg",
+      "type": "dog",
+      "id": 15
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/5a.gif",
+      "type": "cat",
+      "id": 16
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/L-eFKDWlu.jpg",
+      "type": "cat",
+      "id": 17
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/c91.jpg",
+      "type": "cat",
+      "id": 19
+    },
+    {
+      "pet": "https://cdn2.thecatapi.com/images/aqi.jpg",
+      "type": "cat",
+      "id": 20
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/bulldog-french/n02108915_623.jpg",
+      "type": "dog",
+      "id": 21
     }
   ]
 }
