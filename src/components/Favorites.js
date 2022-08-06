@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Pet from './Pet'
+import PetForm from './petForm'
 
 export default function Favorites() {
 
   const [favorites, setFavorites] = useState([])
-  // const [displayList, setDisplayList ] = useState([])
   const [filter, setFilter] = useState("all")
 
   useEffect(()=>{
@@ -13,7 +13,6 @@ export default function Favorites() {
     .then((resp)=> resp.json())
     .then((pets)=>{ 
       setFavorites(pets)
-      // setDisplayList(pets)
     })
   },[])
 
@@ -29,20 +28,17 @@ export default function Favorites() {
       const newList = favorites.filter((item)=> item.pet !== pet )
       setFavorites(newList)
     })
-
-    
-    // setDisplayList(newList)  
+  }
+  const handleAddPet =(pet)=>{
+    setFavorites([...favorites, pet])
 
   }
 
+
+
+
   const handleFilter = (value)=>{
     setFilter(value)
-    // if(value !== 'all'){
-    //   const FilteredList = favorites.filter((pet)=> pet.type === value)
-    //   setDisplayList(FilteredList)
-    // }else{
-    //   setDisplayList(favorites)
-    // }
   }
 
   const filteredList = favorites.filter(favorite => {
@@ -55,7 +51,6 @@ export default function Favorites() {
     }
   })
 
-  console.log(filteredList)
 
   return (
     <div>
@@ -65,7 +60,7 @@ export default function Favorites() {
 
       <h1>Favorites</h1>
       
-
+      <PetForm  handleAddPet={handleAddPet}/>
       <div className="filterBox">
          <h3>Filter By: </h3>
         <select onChange={e=> handleFilter(e.target.value)} name='pet'>

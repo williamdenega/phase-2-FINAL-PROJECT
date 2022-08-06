@@ -8,6 +8,7 @@ export default function DogPage() {
   const [pets, setPets] = useState(null)
 
   const handleLike = (pet,e,id)=>{
+    debugger
     fetch('http://localhost:3000/likes',{
       method:'POST',
       headers:{
@@ -48,10 +49,10 @@ export default function DogPage() {
             <NavBar/> 
             
         </div>
-        <h1>SecondPage</h1>
+        <h1>Random Dogs</h1>
        {pets ? 
        <div className='card-container'>
-          {pets.map((pet,count)=><Pet key={count} pet= {pet} handleClick={handleLike}/> )}
+          {pets.map((pet,count)=><Pet key={count} pet={pet} handleClick={handleLike}/> )}
           <div id="button-div">
             <button id='loadButton' onClick={loadMore}>Load More Dogs</button>
           </div>

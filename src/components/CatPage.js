@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Pet from './Pet'
 
-export default function ThirdPage() {
+export default function CatPage() {
 
   const [cats, setCats] = useState(null)
 

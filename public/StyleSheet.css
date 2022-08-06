@@ -74,3 +74,36 @@ img {
 }
 
 
+.add-toy-form {
+    width: 80%;
+    background-color: bisque;
+    border: #e04b52;
+  }
+  
+  .submit {
+    position: relative;
+    background-color: #e04b52;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  .submit:hover {
+    background-color: whitesmoke;
+    border: #e04b52 solid 1px;
+    color: #e04b52;
+  }
+  
+  .input-text {
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 40%;
+    font-size: 14px;
+    font-family: monospace;
+    margin: 3px;
+  }

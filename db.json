@@ -64,6 +64,16 @@
       "pet": "https://images.dog.ceo/breeds/bulldog-french/n02108915_623.jpg",
       "type": "dog",
       "id": 21
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/dachshund/dog-495133_640.jpg",
+      "type": "dog",
+      "id": 22
+    },
+    {
+      "pet": "https://images.dog.ceo/breeds/terrier-american/n02093428_640.jpg",
+      "type": "dog",
+      "id": 23
     }
   ]
 }
