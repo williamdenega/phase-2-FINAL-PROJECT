@@ -1,16 +1,15 @@
 import React, {useState} from "react";
 
-function ToyForm({handleAddToy}) {
+function PetForm({handleAddPet}) {
 
-  const [toyObj, setToyObj] = useState({
-    name: '',
-    image: '',
-    likes: 0
+  const [petObj, setPetObj] = useState({
+    pet: '',
+    type: ''
   })
 
   const handleChange = (event)=>{
-    setToyObj({
-      ...toyObj,
+    setPetObj({
+      ...petObj,
       [event.target.name]: event.target.value
     })
   }
@@ -22,14 +21,13 @@ function ToyForm({handleAddToy}) {
       headers: {
         'Content-Type': "application/json",
       },
-      body: JSON.stringify(toyObj)
+      body: JSON.stringify(petObj)
     })
     .then((resp)=> resp.json())
-    .then((toy)=> handleAddToy(toy))
-    setToyObj({
-      name:'',
-      image: '',
-      likes: 0
+    .then((pet)=> handleAddPet(pet))
+    setPetObj({
+      pet: '',
+      type: ''
     })
 
 
@@ -37,30 +35,42 @@ function ToyForm({handleAddToy}) {
 
   return (
     <div className="container">
-      <form className="add-toy-form" onSubmit={handleSubmit}>
-        <h3>Create a toy!</h3>
+      <form className="add-pet-form" onSubmit={handleSubmit}>
+        <h3>Add your own Pet!</h3>
         <input
           type="text"
-          name='name'
-          placeholder="Enter a toy's name..."
+          name="pet"
+          placeholder="Enter a Pet's image URL..."
           className="input-text"
-          value={toyObj.name}
+          value={petObj.pet}
           onChange={handleChange}
         />
         <br />
-        <input
-          type="text"
-          name="image"
-          placeholder="Enter a toy's image URL..."
-          className="input-text"
-          value={toyObj.image}
-          onChange={handleChange}
+        <h3>Select the type of Pet</h3>
+        <input 
+        type="radio" 
+        id="dog_radioBTN" 
+        name="type" 
+        value="dog"
+        onChange={handleChange}
+        required
         />
+        <label htmlFor="dog">DOG</label>
+        <input 
+        type="radio" 
+        id="cat_radioBTN" 
+        name="type" 
+        value="cat"
+        onChange={handleChange}
+        required
+        />
+        <label htmlFor="cat">CAT</label>
+        <br/>
         <br />
         <input
           type="submit"
           name="submit"
-          value="Create New Toy"
+          value="Add New Pet"
           className="submit"
         />
       </form>
@@ -68,4 +78,4 @@ function ToyForm({handleAddToy}) {
   );
 }
 
-export default ToyForm;
+export default PetForm;

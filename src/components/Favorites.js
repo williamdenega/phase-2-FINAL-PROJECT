@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Pet from './Pet'
-import PetForm from './petForm'
+import PetForm from './PetForm'
 
 export default function Favorites() {
 
