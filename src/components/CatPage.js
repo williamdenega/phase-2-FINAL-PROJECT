@@ -45,7 +45,7 @@ export default function CatPage() {
             <NavBar/> 
             
         </div>
-        <h1>Third Page</h1>
+        <h1>Random Cats</h1>
         {cats ? <div className='card-container'>
           {cats.map((cat,count)=><Pet key={count} pet= {cat.url} handleClick={handleLike}/> )}
           <div>
