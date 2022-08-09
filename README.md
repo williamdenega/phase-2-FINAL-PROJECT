@@ -28,7 +28,7 @@ Runs the app in the development mode.
 Launches the REST API for the favorites page. 
 
 
-## Technology Used
+## API's Used
 
 In the webpage, I used 2 API's. One for random cats, and one for the random dogs.
 
